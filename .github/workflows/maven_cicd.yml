@@ -38,13 +38,13 @@ jobs:
 
       - name: Gitleaks Code Scan
         run: gitleaks detect source . -r gitleaks-report.json -f json
-   test:
-    runs-on: self-hosted
-    needs: security-check
-    steps:
-      - uses: actions/checkout@v4
-      - name: Test unit cases
-        run: mvn compile
+    test:
+      runs-on: self-hosted
+      needs: security-check
+      steps:
+        - uses: actions/checkout@v4
+        - name: Test unit cases
+          run: mvn compile
     
       
 
