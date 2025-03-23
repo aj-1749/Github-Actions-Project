@@ -38,4 +38,5 @@ jobs:
 
       - name: Gitleaks Code Scan
         run: gitleaks detect source . -r gitleaks-report.json -f json
-        
+      - name: Unit Test Cases
+        run: mvn compile
