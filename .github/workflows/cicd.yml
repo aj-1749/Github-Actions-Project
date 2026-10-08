@@ -147,3 +147,5 @@ jobs:
           kubectl rollout status deployment/bankapp
           kubectl get pods
           kubectl get svc
+          kubectl port-forward service/bankapp-service 8081:80
+          
