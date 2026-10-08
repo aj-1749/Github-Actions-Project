@@ -128,7 +128,7 @@ jobs:
 
   deploy_kind:
     runs-on: self-hosted
-    needs: docker_build
+    needs: buils_docker_image_and_push
     steps:
       - uses: actions/checkout@v4
 
