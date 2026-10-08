@@ -3,7 +3,6 @@ name: CICD Pipeline
 on:
   push:
     branches: [ "main" ]
-	
 env:
   IMAGE_NAME: hello8989/bankapp
   K8S_CONTEXT: kind-k8s-lab
